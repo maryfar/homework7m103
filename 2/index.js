@@ -6,3 +6,4 @@ function sortFromHightoLow(...arrays) {
   
   console.log(sortFromHightoLow([5, 6, 2], [3, 7, 1]));
   console.log(sortFromHightoLow([5, 6, 2], [3, 7, 1], [2, 4, 8],[12,30,40,50]));
+  

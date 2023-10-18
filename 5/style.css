@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(199, 197, 197);
+    padding: 20px 40px;
+    height: 80px;
+   
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 100%;
+   
+}
+.menu{
+    display: flex;
+    gap:20px;
+    
+
+}
+a:hover{
+    border-bottom: 2px solid rgb(38, 214, 147);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    /* padding: 50px , 80px; */
+    
+}
+
+.leftpart{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 60px;
+}
+.rightpart{
+    
+    display: flex;
+    flex-direction: column;
+   margin-top: 200px;
+    gap: 40px;
+}
+.adress{
+    display: flex;
+    justify-content: space-between;
+}
+.upload{
+ border: 1px rgb(0, 0, 0)  dashed;
+ height: 100px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 20px;
+
+}
+
+.submit{
+    width: 100%;
+    height:40px ;
+    background-color: rgb(38, 214, 147);
+    border: none;
+    color:white;
+    padding: 10px;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 2px;
+    height: 40px;
+
+}
+input[placeholder="Email"],input[placeholder ="Address"]{
+    width: 230px;
+
+}
+input[placeholder="Postcode"]{
+    width: 180px;
+}
+
+#postcodeError{
+    justify-self:right;
+}
+
+.quick1{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+   
+}
+.quick{
+    display: flex;
+    gap:10px;
+   
+
+}
+
+
+.endbtn{
+    background-color: rgb(38, 214, 147);
+    border: none;
+    color:white;
+    padding: 10px;
+    width: 60px;
+}
+
+.Kingdom::before{
+    content: url(./assets/DTqIL8Ba3KIuxGkpXw5ayA_48x48.png);
+    vertical-align: middle;
+
+   
+
+}
+.state::before{
+    content: url(./assets/wj9uZvn_vZrelLFGH8fnPA_48x48.png);
+    vertical-align: middle;
+    
+    
+}
+.imgup{
+    width: 24px;
+    height: 24px;
+
+
+
+}
+
+.attatch{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    }
+
+    .spanattatch{
+        font-size: 14px;
+        justify-self: start;
+    }
+
+    .error {
+        color: red;
+        font-size: 10px;
+        margin-top: 2px;
+      }
+.showerror{
+    display: flex;
+    flex-direction: column;
+}
+
+#nda{
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+   margin: 5px;
+   border:1px solid #000;
+}

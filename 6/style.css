@@ -1,0 +1,245 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: "Segoe UI", sans-serif;
+}
+
+.video-container {
+    width: 100%;
+    height: 100px;
+    overflow:hidden;
+
+  }
+  
+  .video-container video {
+    width: 100%;
+  }
+
+
+  .content-container{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+  }
+  
+  .filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    margin: 20px;
+    border-bottom: 2px solid #bebdbd;
+    padding-bottom: 20px;
+  }
+  .filter{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .filters label {
+    margin-right: 10px;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width:90%;
+    margin: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
+    
+  }
+  .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width:100%;
+   padding: 10px;
+    border-bottom: 2px solid #bebdbd;
+    padding-bottom: 20px;
+    margin: 20px;
+  }
+
+  .topicForproductlist{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    width:90%;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 20px;
+    border-bottom: 2px solid #bebdbd;
+
+  }
+
+  .product img {
+    width: 70px;
+    height: 70px;
+  }
+
+
+  .beautiful-button {
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, #1b1c3f, #4a4e91);
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 22px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: button-shimmer 2s infinite;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hover animation */
+  .beautiful-button:hover {
+    background: linear-gradient(to bottom, #2c2f63, #5b67b7);
+    animation: button-particles 1s ease-in-out infinite;
+    transform: translateY(-2px);
+  }
+  
+  /* Click animation */
+  .beautiful-button:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Shimmer animation */
+  @keyframes button-shimmer {
+    0% {
+      background-position: left top;
+    }
+  
+    100% {
+      background-position: right bottom;
+    }
+  }
+  
+  /* Particle animation */
+  @keyframes button-particles {
+    0% {
+      background-position: left top;
+    }
+  
+    100% {
+      background-position: right bottom;
+    }
+  }
+
+  .modal-overlay {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-body {
+    display: flex;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 12px;
+    flex-direction: column;
+    gap: 5px;
+    height: 90%;
+    
+  }
+
+
+  .modal-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    padding: 5px;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    overflow: auto;
+    
+  }
+  
+  .close {
+    color: #884545;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .cartbtn{
+    position: relative;
+    display: inline-block;
+    background: linear-gradient(to bottom, #4548a9, #8b3f74);
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 22px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: button-shimmer 2s infinite;
+    transition: all 0.3s ease-in-out;
+  }
+
+
+
+
+
+
+
+
+
+
+
+

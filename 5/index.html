@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <h2>LOGO</h2>
+        <div class="menu">
+            <a>Compony</a>
+            <a>Services</a>
+            <a>FinTech Solution</a>
+            <a>Products</a>
+            <a>Contact us</a>
+        </div>
+    </header>
+
+    <form id="form">
+        <div class="container">
+            <div class="leftpart">
+                <h1>Contact us</h1>
+                <p>
+                    Need an experienced and skilled hand with custom IT project?<br />
+                    fill out the form to get free consultation.
+                </p>
+
+                <div class="showerror"><input placeholder="Your company name" type="text" id="company" />
+                    <span id="companyNameError"></span>
+                </div>
+                <input placeholder="Neture of bessiness" type="text" />
+                <div class="adress">
+                    <input placeholder="Address" type="text" />
+                    <div class="showerror">
+                        <input placeholder="Postcode" type="text" />
+                        <span id="postcodeError"></span>
+                    </div>
+                </div >
+                <input placeholder="Contact name" type="text" />
+                <input placeholder="Contact Phone" type="text" />
+                <div class="showerror">
+                    <input placeholder=" Your Email" type="email" />
+                    <span id="emailError"></span>
+                </div>
+                <input placeholder="Linkedin" type="text" />
+                <input placeholder="Lets talk about your idea" type="text" />
+                <div class="attatch">
+                <div class="upload">
+                    <img src="./assets/download-outline.svg" class="imgup" />
+                    <a>&nbsp;Upload Additional file</a>
+                </div>
+                
+                    <span class="spanattatch">
+                        Attatch file. File size of your documents should not exceed 10MB
+                    </span>
+                </div>
+                    <button class="submit" id="submit" type="submit">SUBMIT</button>
+                <div class="checkbox">
+                    <input name="nda" type="checkbox" id="nda" />
+                    <label for="nda">I want protect my data by signing an NDA</label>
+                </div>
+            </div>
+
+            <div class="rightpart">
+                <h4>Offices</h4>
+                <span class="">United state<br />500 5th Avenue Suite 400, ny 10110</span>
+
+                <span class="">United state<br />500 5th Avenue Suite 400, ny 1011</span>
+
+                <span class="">United state<br />500 5th Avenue Suite 400, ny 10110</span>
+
+                <div class="quick1">
+                    <h4>Fot Quick Inquiries</h4>
+                    <span class="Kingdom">&nbsp;+44 77777777</span>
+                    <span class="state">&nbsp;+1 333333330</span>
+                </div>
+
+                <h4>Would you like to join our newsietter?</h4>
+                <div class="quick">
+                    <input type="email" placeholder="Email" />
+                    <button class="endbtn">✓</button>
+                </div>
+            </div>
+        </div>
+        <div id="successMessage"></div>
+
+
+
+        <script src="./index.js"></script>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Display</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="video-container">
+    <video src="./assets/istockphoto-869584204-640_adpp_is.mp4" autoplay loop muted></video>
+  </div>
+<div class="content-container">
+  <div class="filters">
+    <div class="filter" >
+      <label for="model-filter">Model:</label>
+      <select id="model-filter">
+        <option value="0">All</option>
+        <option value="1">Model 1</option>
+        <option value="2">Model 2</option>
+        <option value="3">Model 3</option>
+      </select>
+    </div>
+
+    <div class="filter" >
+  <label for="processor-filter">Processor:</label>
+  <select id="processor-filter">
+    <option value="all">All</option>
+    <option value="processor1">CORE I5</option>
+    <option value="processor2">CORE I7</option>
+    <option value="processor3">CORE I9</option>
+  </select>
+</div>
+
+
+  <div class="filter" >
+    <label for="filterRAM">RAM:</label>
+    <select id="filterRAM">
+      <option value="all">All</option>
+      <option value="processor1">4 GB</option>
+      <option value="processor2">6 GB</option>
+      <option value="processor3">8 GB</option>
+    </select>
+</div>
+<div class="filter" >
+    <label for="filterHardDisk">Hard Disk:</label>
+    <select id="filterHardDisk">
+      <option value="0">All</option>
+      <option value="1">1 TB</option>
+      <option value="2">512 GB</option>
+      <option value="3">256 GB</option>
+    </select>
+</div>
+<div class="filter" >
+    <label for="filterDisplay">Display:</label>
+    <select id="filterDisplay">
+      <option value="all">All</option>
+      <option value="processor1">15 inch</option>
+      <option value="processor2">13 inch</option>
+      <option value="processor3">11 inch</option>
+    </select>
+</div>
+<div class="filter" >
+    <label for="filterGraphic">Graphic:</label>
+    <select id="filterGraphic">
+      <option value="all">All</option>
+      <option value="processor1">8 GB</option>
+      <option value="processor2">16 GB</option>
+      <option value="processor3">32 GB</option>
+    </select>
+</div>
+    <button id="cartButton" class="cartbtn">Cart</button>
+
+
+    <div id="cartModal" class="modal-overlay">
+      <div id="modalBody" class="modal-body">
+        <div id="modalHeader" class="modal-header">
+          <button class="close" id="close">&times;</button>
+        </div>
+        <div id="modalContent" class="modal-content">
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="topicForproductlist">
+    <h3>Model</h3>
+    <h3>Picture</h3>
+    <h3>Processor</h3>
+    <h3>RAM</h3>
+    <h3>Hard Disk</h3>
+    <h3>Display</h3>
+    <h3>Graphic</h3>
+    <h3>Price</h3>
+    <h3>Process</h3>
+    </div>
+    
+
+
+
+  <div class="product-list">
+    <div class="product">
+      <span id="model-span">Model 1</span>
+      <img src="./assets/images.jpg" alt="Product 1">
+      <span id="processor-span">CORE I5</span>
+      <span id="ram-span">4 GB</span>
+      <span id="hard-disk-span">1 TB</span>
+      <span id="display-span">11 inch</span>
+      <span id="graphic-span">16 GB</span>
+      <span id="price-span">540000</span>
+      <button  class="beautiful-button" >Buy</button>
+    </div>
+    <div class="product">
+      <span id="model-span">Model 2</span>
+      <img src="./assets/images.jpg" alt="Product 1">
+      <span id="processor-span">CORE I5</span>
+      <span id="ram-span">6 GB</span>
+      <span id="hard-disk-span">512 GB</span>
+      <span id="display-span">13 inch</span>
+      <span id="graphic-span">8 GB</span>
+      <span id="price-span">700000</span>
+      <button  class="beautiful-button">Buy</button>
+    </div>
+    <div class="product">
+      <span id="model-span">Model 3</span>
+      <img src="./assets/images.jpg" alt="Product 1">
+      <span id="processor-span">CORE I9</span>
+      <span id="ram-span">8 GB</span>
+      <span id="hard-disk-span">1 TB</span>
+      <span id="display-span">15 inch</span>
+      <span id="graphic-span">32 GB</span>
+      <span id="price-span">900000</span>
+      <button  class="beautiful-button">Buy</button>
+    </div>
+    <div class="product">
+      <span class="model-span">Model 4</span>
+      <img src="./assets/images.jpg" alt="Product 1">
+      <span class="processor-span">CORE I7</span>
+      <span class="ram-span">8 GB</span>
+      <span class="hard-disk-span">512 GB</span>
+      <span class="display-span">15 inch</span>
+      <span class="graphic-span">32 GB</span>
+      <span class="price-span">800000</span>
+      <button  class="beautiful-button">Buy</button>
+    </div>
+   
+
+  </div>
+
+  
+</div>
+<div id="product-container"></div>
+  <script src="./index.js"></script>
+</body>
+</html>
